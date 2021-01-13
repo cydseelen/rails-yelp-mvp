@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/restaurants/new', to: 'restaurants#new'
   post '/restaurants', to: 'restaurants#create'
 
-  get '/reviews/new', to: 'restaurants#new'
-  post '/reviews', to: 'restaurants#create'
+  get '/restaurants/:restaurant_id/reviews/new', to: 'reviews#new'
+  post '/restaurants/:restaurant_id/reviews', to: 'reviews#create'
 end
