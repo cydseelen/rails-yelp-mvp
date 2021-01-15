@@ -8,5 +8,3 @@ class Review < ApplicationRecord
   validates :content, length: { minimum: 2 }
   validates :content, presence: true
 end
-
-# :inclusion => 0..5,
